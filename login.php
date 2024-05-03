@@ -70,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </form>
             <div class="signImg flex-center">
                 <img src="login.png" alt="Login image">
+                <p></p>
             </div>
         </div>
     </main>
