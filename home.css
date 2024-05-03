@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'MyTrebuchet';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trebuchet MS'), url('trebuc.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'MyTrebuchet', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #ececec;
+    min-height: 100vh;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+li {
+    cursor: pointer;
+}
+
+
+header {
+    height: 100px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 20px grey;
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    background-color: #ececec;
+}
+header ul {
+    /* display: none; */
+    min-width: 180px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header a:nth-child(1) {
+    margin-right: 15px;
+    background-color: darkblue;
+    transition: all .5s ease;
+    color: white;
+    border: 1px solid darkblue;
+}
+header a:nth-child(1):hover {
+    background-color: transparent;
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+header a:nth-child(2) {
+    transition: all .5s ease;
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+header a:nth-child(2):hover {
+    background-color: darkblue;
+    color: white;
+}
+header li {
+    padding: 13px 30px;
+}
+.active {
+    color: rgb(4, 4, 231);
+    font-weight: 700;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .logo, .logo span {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    align-self: center;
+} */
+/* .logo p {
+    font-family: cursive;
+    font-weight: 900;
+} */
+/* .logo .letterB{
+    color: darkblue;
+    font-size: 3rem;
+}
+.logo .letterT{
+    color: darkblue;
+    font-family: cursive;
+    font-size: 1.5rem;
+} */
+/* .logoText {
+    line-height: 20px;
+} */
+main {
+    /* padding-top: 30px; */
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bTrackerText ul {
+    list-style-type: none;
+    line-height: 23px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.bTrackerText h1 {
+    font-size: 3.5rem;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+.bTrackerText p {
+    color: rgb(65, 64, 64);
+    font-size: 1.1rem;
+    width: 90%;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.bTrackerImg {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 55px; 
+}
+.bTrackerText {
+    width: 50%;
+    margin-left: 55px; 
+    margin-right: 20px;}
+.bTrackerImgCtn {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.bTrackerText span {
+    font-size: 30px;
+    color: darkblue
+}
+.bTrackerText li {
+    font-size: 1rem;
+    color: rgba(51, 50, 50, 0.863);
+}
+#getStarted {
+    background-color: darkblue;
+    transition: all .3s ease;
+    color: white;
+    border: 1px solid darkblue;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+#getStarted:hover {
+    background-color: transparent;
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+.bTrackerText li:nth-child(1) {
+    float: right;
+}
+
+
+
+@media (max-width:768px) {
+    .flex {
+        flex-direction: column;
+    }
+    .bTrackerImgCtn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bTrackerText h1 {
+        font-size: 3rem;
+    }
+    .bTrackerText p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .bTrackerText li:nth-child(1) {
+        float: none;
+    }
+} 
+
+@media (max-width:1200px) {
+    .bTrackerText {
+        width: 100%;
+        margin-left: 0px; 
+        margin-bottom: 30px; 
+        margin-top: 30px;
+    }
+    .bTrackerImg {
+        width: 350px;
+        margin-right: 0px; 
+    }
+}
